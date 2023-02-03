@@ -20,7 +20,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/auth")
 @AllArgsConstructor
-@Profile("prod")
+@Profile(value = {"prod", "test"})
 public class AutenticacaoController {
 
     private AuthenticationManager authManager;
